@@ -15,4 +15,8 @@ Route::get('/about', function () {
     return view('pages.about', $biodata);
 });
 
+Route::get('/about/{id}', function () {
+    return view('pages.detail');
+});
+
 Route::view('/contact', 'pages.contact');
